@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+</head>
+
+<body>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form action="">
+                <div class="form-campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo interesse">CEP</label>
+                    <input type="text" id="CEP" name="CEP">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">CPF</label>
+                    <input type="tel" id="CPF" name="CPF">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script>
+        $('#telefone').mask('(00) 00000-0000', {
+            placeholder: '(00) 00000-0000'
+        })
+        $('#CEP').mask('00000-000', {
+            placeholder: '0000-000'
+        })
+        $('#CPF').mask('000.000.000-00', {
+            placeholder: '000.000.000-00'
+        })
+        $('form').validate({
+            rules: {
+                nome: {
+                    required: true
+                },
+                telefone: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                CEP: {
+                    required: true
+                },
+                CPF: {
+                    required: true
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
