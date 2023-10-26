@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+header{
+    background-color: rgb(23, 107, 210);
+}
+
+header h1{
+    color: #fff;
+}
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 6px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 21px;
+    color: #fff;
+}
+
+.Sobre{
+    display:flex;
+    padding-top: 32px;
+}
+
+.content{
+    padding-left: 24px;
+}
+
+.content h2{
+    color: rgb(23, 107, 210);
+    padding-bottom: 16px;
+    border-bottom: 2px solid  rgb(23, 107, 210);
+}
+
+.content p{
+    padding-top: 35px;
+}
+
+.Produto{
+    display: grid;
+    grid-template-columns: repeat(4, 24.45%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-top: 16px;
+}
+
+.tenis{
+    width: 225px;
+}
+
+.Produtos h2{
+    color: rgb(23, 107, 210);
+    padding-bottom: 16px;
+    border-bottom: 2px solid  rgb(23, 107, 210);
+}
+
+.Produtos button{
+    font-size: 16px;
+    color: #fff;
+    background-color:  rgb(23, 107, 210);
+    padding: 8px 28px;
+    margin-top: 5px;
+    border-style: none;
+}
+
+@media screen and (max-width:767px){
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%; 
+    }
+    .Produto{
+        display: block;
+    }
+    .Sobre{
+        display: block;
+        padding-top: 16px ;
+    }
+    .Sobre img{
+        width: 300px;
+        left: 0;
+    }
+    .content{
+        padding-left: 0;
+    }
+    .tenis button{
+        margin-top: 4px;
+        margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;    
+    }
+    .Produto{ 
+        grid-template-columns: repeat(2, 49%);
+    }
+}
