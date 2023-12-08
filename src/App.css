@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+form{
+  margin: 24px 0 24;
+}
+form input {
+  margin: 8px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+}
+
+table {
+  width: 468px;
+}
+.IMCindice{
+  text-align: center;
+}
+
+
+.Magreza{
+  background-color: yellow;
+}
+
+.Normal{
+  background-color: green;
+}
+
+.SobrePeso{
+  background-color: orange;
+}
+
+.Obesidade {
+  background-color: red;
+}
+
+.ObesidadeGrave {
+  background-color: darkred;
+}
+
+.reset{
+  background-color: aliceblue;
+}
